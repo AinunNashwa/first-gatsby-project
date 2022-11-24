@@ -1,9 +1,13 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "My First Gatsby Site",
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: "plugin-name",
+      options: {
+        // Check the plugin README for what options go in here
+      }
+    },
+  ]
 }
