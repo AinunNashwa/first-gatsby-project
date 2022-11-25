@@ -13,7 +13,5 @@ module.exports = {
       }
     },
     "gatsby-plugin-mdx",
-    "gatsby-remark-prismjs",
-    "gatsby-remark-autolink-headers",
   ],
 };
