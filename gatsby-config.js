@@ -5,8 +5,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    "gatsby-remark-prismjs",
-    "gatsby-remark-autolink-headers",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -15,5 +13,7 @@ module.exports = {
       }
     },
     "gatsby-plugin-mdx",
+    "gatsby-remark-prismjs",
+    "gatsby-remark-autolink-headers",
   ],
 };
