@@ -31,17 +31,6 @@ export const query = graphql`
     }
   }
 `
-
-export const query = graphql`
-  query {
-    allFile {
-      nodes {
-        name
-      }
-    }
-  }
-`
-
 export const Head = () => <Seo title="My Blog Posts" />
 
 export default BlogPage
