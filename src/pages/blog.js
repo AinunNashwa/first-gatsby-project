@@ -18,13 +18,14 @@ const BlogPage = ({ data }) => {
     </Layout>
   )
 }
+
 export const query = graphql`
   query {
     allMdx(sort: { frontmatter: { date: DESC }}) {
       nodes {
         frontmatter {
-          date(formatString: "MMMM D, YYYY")
           title
+          date(formatString: "MMMM DD, YYYY")
         }
         id
         excerpt
@@ -32,6 +33,7 @@ export const query = graphql`
     }
   }
 `
+
 export const Head = () => <Seo title="My Blog Posts" />
 
 export default BlogPage
