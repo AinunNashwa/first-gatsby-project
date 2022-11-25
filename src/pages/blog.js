@@ -18,6 +18,20 @@ const BlogPage = ({ data }) => {
     </Layout>
   )
 }
+export const query = graphql`
+  query {
+    allMdx(sort: { frontmatter: { date: DESC }}) {
+      nodes {
+        frontmatter {
+          date(formatString: "MMMM D, YYYY")
+          title
+        }
+        id
+        excerpt
+      }
+    }
+  }
+`
 
 export const query = graphql`
   query {
